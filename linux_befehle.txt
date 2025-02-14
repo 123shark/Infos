@@ -1,0 +1,16 @@
+mount -o remount,rw /
+mount -o remount,rw /boot
+
+sudo mount -t nfs 192.168.178.11:/nfs /mnt/nfsserver
+
+Asführbare Datei erstellen
+sudo nano test.sh
+echo "Test"
+bash test.sh
+sudo chmod +x test.sh	#ausführbar machen#!/bin/bash		# an der ersten stelle der Datei hinzufügen
+
+ssh meye1@192.168.178.23 /home/meye1/fhemremote/bewegung.sh
+sudo chmod +x bewegung.sh
+mv bewegung.sh /usr/bin
+sudo find / -name *.jpg
+https://www.shellbefehle.de/befehle/chown/
