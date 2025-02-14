@@ -14,3 +14,12 @@ git remote add origin main (url)
 FIX: "Support for password authentication was removed. Please use a personal access token instead."
 
 git clone https://tokenhere@github.com/user_name/repo_name.git
+
+nano hello.py 
+git status
+git add hello.py 
+git commit -m "pirwsze"
+
+git remote set-url origin https://<TOKEN>@github.com/123shark/homeassistant
+git push origin main
+
