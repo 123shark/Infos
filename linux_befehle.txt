@@ -14,3 +14,8 @@ sudo chmod +x bewegung.sh
 mv bewegung.sh /usr/bin
 sudo find / -name *.jpg
 https://www.shellbefehle.de/befehle/chown/
+
+rsync -av admin@192.168.178.14:/data/output/Camera1/2025-02-11*00.jpg /home/mm/Desktop/Zeitraffermin
+ls *.jpg > filelist3.txt
+sed -i "s/^/file '/;s/$/'/" filelist3.txt 
+ffmpeg -f concat -safe 0 -i filelist3.txt -vf "fps=30,format=yuv420p" timelapsmin3.mp4
