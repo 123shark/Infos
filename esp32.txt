@@ -1,0 +1,2 @@
+Probleme mit 5v output
+https://github.com/hoylabs/OpenDTU-OnBattery/wiki/ESP32-Versions-and-Memory#important-info-for-those-intending-to-use-the-5v-as-output
