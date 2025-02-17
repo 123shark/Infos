@@ -19,3 +19,14 @@ rsync -av admin@192.168.178.14:/data/output/Camera1/2025-02-11*00.jpg /home/mm/D
 ls *.jpg > filelist3.txt
 sed -i "s/^/file '/;s/$/'/" filelist3.txt 
 ffmpeg -f concat -safe 0 -i filelist3.txt -vf "fps=30,format=yuv420p" timelapsmin3.mp4
+##################################
+Probleme beim Zurgiff auf die tty Schnittstelle vom Arduino IDE:
+lsusb
+dmesg |grep tty
+ls -l /dev/ttyACM0
+sudo usermod -aG dialout $USER
+sudo setfacl -m u:$USER:rw /dev/ttyACM0
+ls -l /dev/ttyACM0
+sudo chmod 666 /dev/ttyACM0
+Neu Anmelden
+###################################
