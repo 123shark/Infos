@@ -1,3 +1,5 @@
 Probleme mit 5v output
 https://github.com/hoylabs/OpenDTU-OnBattery/wiki/ESP32-Versions-and-Memory#important-info-for-those-intending-to-use-the-5v-as-output
 At its default form, the 5V Pin is for Input current ONLY! There is a Solder Bridge marked IN-OUT near PINs 11-12 which you must close, if you want to have 5V OUTPUT 
+
+https://forum.arduino.cc/t/chinese-esp32-s3-5v-pin-warning/1192758
