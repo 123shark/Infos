@@ -19,7 +19,6 @@ nano hello.py
 git status
 git add hello.py 
 git commit -m "pirwsze"
-
-git remote set-url origin https://<TOKEN>@github.com/123shark/homeassistant
 git push origin main
 
+git remote set-url origin https://<TOKEN>@github.com/123shark/homeassistant
