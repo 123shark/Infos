@@ -15,7 +15,6 @@ FIX: "Support for password authentication was removed. Please use a personal acc
 
 git clone https://tokenhere@github.com/user_name/repo_name.git
 
-nano hello.py 
 git status
 git add hello.py 
 git commit -m "pirwsze"
